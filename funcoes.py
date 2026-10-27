@@ -51,11 +51,12 @@ def posiciona_frota(frota):
 # Ex 5 
 def afundados(frota, tabuleiro):
     soma = 0
-    for nome in frota.values():
-        n = 0
-        for posicao in nome:
-            if tabuleiro[posicao[0]][posicao[1]] == 'X':
-                n += 1
-        if n >= len(nome):
-            soma += 1 
+    for nomes in frota.values():
+        for navio in nomes:
+            n = 0
+            for posicao in nome:
+                if tabuleiro[posicao[0]][posicao[1]] == 'X':
+                    n += 1
+            if n >= len(nome):
+                soma += 1 
     return soma
