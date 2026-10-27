@@ -54,9 +54,9 @@ def afundados(frota, tabuleiro):
     for nomes in frota.values():
         for navio in nomes:
             n = 0
-            for posicao in nome:
+            for posicao in navio:
                 if tabuleiro[posicao[0]][posicao[1]] == 'X':
                     n += 1
-            if n >= len(nome):
+            if n >= len(navio):
                 soma += 1 
     return soma
