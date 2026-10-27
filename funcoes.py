@@ -47,3 +47,12 @@ def posiciona_frota(frota):
                 grid[linha][coluna] = 1
 
     return grid
+
+# Ex 5 
+def afundados(frota, tabuleiro):
+    soma = 0
+    for nome in frota.keys():
+        for posicao in nome:
+            if tabuleiro[posicao[0]][posicao[1]] == 'X':
+                soma += 1 
+    return soma
